@@ -12580,7 +12580,7 @@
         }
         const Ze = e=>e.includes("x.com") || e.includes("twitter.com") ? "social/twitter.png" : e.includes("facebook.com") ? "social/facebook.png" : e.includes("youtube.com") ? "social/youtube.png" : e.includes("t.me") || e.includes("@") ? "social/telegram.png" : "emoji/loudspeaker.png"
           , Qe = ()=>parseInt(String((new Date).getTime() / 1e3))
-          , Xe = ()=>"".concat("https://t.me/monkeycost_bot", "/app?startapp=r_").concat(Ge().initDataUnsafe.user.id)
+          , Xe = ()=>"".concat("https://t.me/Dragondemotapbot", "/app?startapp=r_").concat(Ge().initDataUnsafe.user.id)
           , Je = function() {
             var e;
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
@@ -43639,7 +43639,7 @@
                         case "share-to-story":
                             try {
                                 qe("SHARE_STORY_DAILY_TASK"),
-                                TN("https://monkeycost232323.web.app/images/stories/task.png", "Go to ".concat(Xe(), " find out how much your account is worth and get a reward! #monkeycostbot")),
+                                TN("https://api.allorigins.win/get?url=https://monkeycost232323.web.app/images/stories/task.png", "Go to ".concat(Xe(), " find out how much your account is worth and get a reward! #monkeycostbot")),
                                 s(!0),
                                 setTimeout(u, 4e4)
                             } catch (e) {
@@ -55822,9 +55822,9 @@
                         we.jsx)(TV, {
                             children: (0,
                             we.jsx)(fO, {
-                                manifestUrl: "https://monkeycost232323.web.app/tonconnect/manifest.json",
+                                manifestUrl: " https://api.allorigins.win/get?url=https://monkeycost232323.web.app/tonconnect/manifest.json",
                                 actionsConfiguration: {
-                                    twaReturnUrl: "https://t.me/monkeycost_bot"
+                                    twaReturnUrl: "https://t.me/@Dragondemotapbot"
                                 },
                                 children: (0,
                                 we.jsx)(PK, {})
