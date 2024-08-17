@@ -24036,8 +24036,7 @@
                 const e = await fetch(r, {
                     method: "POST",
                     headers: {
-                        "Content-Type": t.file ? "multipart/form-data" : "application/json",
-                        "launch-params": n
+                        "Content-Type": t.file ? "multipart/form-data" : "application/json"
                     },
                     body: JSON.stringify(t)
                 })
