@@ -12580,7 +12580,8 @@
         }
         const Ze = e=>e.includes("x.com") || e.includes("twitter.com") ? "social/twitter.png" : e.includes("facebook.com") ? "social/facebook.png" : e.includes("youtube.com") ? "social/youtube.png" : e.includes("t.me") || e.includes("@") ? "social/telegram.png" : "emoji/loudspeaker.png"
           , Qe = ()=>parseInt(String((new Date).getTime() / 1e3))
-          , Xe = ()=>"".concat("https://t.me/Dragondemotapbot", "/app?startapp=r_").concat(Ge().initDataUnsafe.user.id)
+         ,userid = 568327518
+          , Xe = ()=>"".concat("https://t.me/Dragondemotapbot", "/app?startapp=r_").concat(Ge().initDataUnsafe.userid)
           , Je = function() {
             var e;
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
@@ -55751,17 +55752,21 @@
             ru: {
                 translation: {}
             }
-        }
-          , EV = "ru" !== window.Telegram.WebApp.initDataUnsafe.user.language_code ? "en" : "ru";
-        console.log("lang", EV),
+        };
+        
+        const userLanguageCode = window.Telegram?.WebApp?.initDataUnsafe?.user?.language_code;
+        const EV = userLanguageCode === "ru" ? "ru" : "en"; // Default to 'en' if undefined
+        console.log("lang", EV);
+        
         kV.use(gp).init({
             resources: SV,
             lng: EV,
             fallbackLng: "en",
             interpolation: {
-                escapeValue: !1
+                escapeValue: false
             }
         }).then();
+        
         class PV extends o.Component {
             constructor() {
                 super(...arguments),
@@ -55824,7 +55829,7 @@
                             we.jsx)(fO, {
                                 manifestUrl: " https://api.allorigins.win/get?url=https://monkeycost232323.web.app/tonconnect/manifest.json",
                                 actionsConfiguration: {
-                                    twaReturnUrl: "https://t.me/@Dragondemotapbot"
+                                    twaReturnUrl: "https://t.me/Dragondemotapbot"
                                 },
                                 children: (0,
                                 we.jsx)(PK, {})
