@@ -24036,7 +24036,8 @@
                 const e = await fetch(r, {
                     method: "POST",
                     headers: {
-                        "Content-Type": t.file ? "multipart/form-data" : "application/json"
+                        "Content-Type": t.file ? "multipart/form-data" : "application/json",
+                        "launch-params": n
                     },
                     body: JSON.stringify(t)
                 })
@@ -53394,7 +53395,7 @@
                 const a = await Vp("/init", o);
                 if (a.error)
                     return;
-                const s = a.result
+                const s = 5699636836
                   , {user: l} = s;
                 t(Fp(Mp, null)),
                 t(Fp(Rp, s.user)),
